@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CooKing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-950 font-poppins">
+     <!-- Home Section -->
+    <section id="home" class="bg-[url(./images/background.jpg)] bg-no-repeat bg-center bg-cover">
+        <!-- Navbar -->
+        <nav>
+            <div id="desktop-menu" class="px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center">
+                    <!-- Logo -->
+                    <img class="w-16" src="images/logo.png" alt="logo image">
+    
+                    <!-- Login & Register Buttons -->
+                    <div class="flex items-center space-x-4">
+                        <a href="#login" class="md:text-xl text-amber-400 hover:text-amber-500">Sign In</a>
+                        <a href="#register" class="md:text-xl inline-block bg-amber-400 text-white px-4 py-2 rounded-lg shadow-md transition duration-150 ease-in-out hover:scale-110 hover:bg-amber-500">
+                            Register
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Hero Section -->
+        <div class="text-center pt-36 pb-60">
+            <img class="w-80 mx-auto" src="images/logo-full.png" alt="cooking logo with text">
+            <p class="text-xl text-white px-4">The place where anyone can be the king of its kitchen.</p>
+            <a href="#register" class="text-2xl mt-6 inline-block bg-amber-400 text-white px-6 py-3 rounded-lg shadow-md transition duration-150 ease-in-out hover:scale-110 hover:bg-amber-500">
+                Join Now
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="text-4xl text-center mt-20 text-amber-500">What you can do</h2>
+        <div class="grid lg:grid-cols-2 gap-y-20 items-center justify-items-center bg-white pt-16 pb-20 px-6 text-center lg:px-40 mt-10">
+            <div class="lg:order-1">
+                <h3 class="text-3xl text-amber-400">Publish your recipe</h3>
+                <p class="text-xl mt-8">
+                    Share your favorite recipes with the community and let them know your secret ingredients!
+                </p>
+            </div>
+            <img class="w-96 lg:order-2" src="images/food.svg" alt="food-image">
+            <div class="lg:order-4">
+                <h3 class="text-3xl text-amber-400">Recreate delicious dishes</h3>
+                <p class="text-xl mt-8">Maybe someone has shared a recipe that you'd like to reproduce? Save it on your profile!</p>
+            </div>
+            <img class="w-96 lg:order-3" src="images/share.svg" alt="people-image">
+            <div class="lg:order-5">
+                <h3 class="text-3xl text-amber-400">Join the community!</h3>
+                <p class="text-xl mt-8">
+                    Follow other users, comment on their recipes and share your thoughts with the community.
+                </p>
+            </div>
+            <img class="w-96 lg:order-6" src="images/like.svg" alt="person-image">
+        </div>
+    </section>
+
+    <section id="reviews" class="bg-[url(./images/background.jpg)] bg-no-repeat bg-center bg-cover text-center py-20 px-4">
+        <h2 class="text-4xl text-white">What our users say</h2>
+        <div class="grid gap-10 mt-10 justify-items-center lg:grid-cols-3">
+            <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                <img class="w-32 mx-auto" src="images/avatar1.png" alt="user-image">
+                <h3 class="text-xl mt-4 text-amber-500">Mario Rossi</h3>
+                <p class="mt-4">"It's fantastic to have an online place where you can share your recipes with other cooking enthusiasts!"</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                <img class="w-32 mx-auto" src="images/avatar2.png" alt="user-image">
+                <h3 class="text-xl mt-4 text-amber-500">Paolo Bianchi</h3>
+                <p class="mt-4">"Cooking is incredible! Thanks to other users I discovered a lot of new recipes."</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                <img class="w-32 mx-auto" src="images/avatar4.png" alt="user-image">
+                <h3 class="text-xl mt-4 text-amber-500">Federica Verdi</h3>
+                <p class="mt-4">"Cooking is the social network that was missing! It's super easy and fun to use."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="bg-amber-400 text-center py-20 px-4">
+            <h2 class="text-4xl text-white">Contact Us</h2>
+            <p class="text-white text-lg mt-4">If you have any questions, feel free to contact us!</p>
+        </div>
+        <div class="bg-white text-center py-20">
+            <form method="POST" class="w-96 mx-auto">
+                <input type="text" name="name" placeholder="Name" class="w-full px-4 py-2 mt-4 rounded-lg shadow-md">
+                <input type="email" name="email" placeholder="Email" class="w-full px-4 py-2 mt-4 rounded-lg shadow-md">
+                <textarea name="message" placeholder="Message" class="w-full px-4 py-2 mt-4 rounded-lg shadow-md"></textarea>
+                <button type="submit" class="w-full bg-amber-400 text-white px-4 py-2 mt-4 rounded-lg shadow-md transition duration-150 ease-in-out hover:scale-110 hover:bg-amber-500">Send</button>
+            </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-[url(./images/background.jpg)] bg-no-repeat bg-center bg-cover text-center py-10">
+        <p class="text-white">CooKing &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
